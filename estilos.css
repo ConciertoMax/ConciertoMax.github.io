@@ -8,7 +8,6 @@
 html {
   scroll-behavior: smooth;
   height: 100%;
-  background: transparent !important;
 }
 
 body {
@@ -16,7 +15,6 @@ body {
   line-height: 1.6;
   color: #ffffff;
   overflow-x: hidden;
-  background: transparent !important;
   height: 100%;
   min-height: 100%;
 }
@@ -27,54 +25,38 @@ body {
   padding: 0 1rem;
 }
 
-/* Fondo global */
+/* Fondo global - FIJO sin movimiento */
 .global-background {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  min-height: 100%;
-  z-index: 0;
-}
-
-.global-background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 200vh;
-  background-image: url("imagenes/fondo.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: -2;
+  height: 100%;
+  z-index: 0;
 }
 
 .background-image {
   width: 100%;
-  height: 200vh;
+  height: 100%;
   object-fit: cover;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 }
 
 .background-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 200vh;
+  height: 100%;
   background: rgba(42, 0, 74, 0.7);
-  z-index: -1;
+  z-index: 1;
 }
 
 .main-content {
   position: relative;
   z-index: 10;
-  background: transparent !important;
 }
 
 /* Header */
