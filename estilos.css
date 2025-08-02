@@ -1,0 +1,806 @@
+/* Reset y configuración base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Fondo global */
+.global-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 0, 74, 0.7);
+}
+
+.main-content {
+  position: relative;
+  z-index: 10;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(42, 0, 74, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(138, 43, 226, 0.3);
+  z-index: 50;
+  padding: 1rem 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff0000;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.poster-container {
+  position: relative;
+  height: 600px;
+}
+
+.poster-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.poster-image:hover {
+  transform: scale(1.05);
+}
+
+.event-info-column {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  color: white;
+}
+
+.event-title {
+  font-family: "Squada One", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.year-text {
+  color: white;
+}
+
+.event-location {
+  font-size: 1.875rem;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.countdown-container {
+  margin: 3rem 0;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.countdown-box {
+  background: rgba(74, 42, 122, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid #6c3fa3;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-width: 80px;
+}
+
+.countdown-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f87171;
+  display: block;
+  text-align: center;
+}
+
+.countdown-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: block;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.vip-section {
+  margin-bottom: 2rem;
+}
+
+.vip-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.vip-button {
+  background: #22c55e;
+  border: 2px solid #22c55e;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.vip-button:hover {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+.additional-info {
+  margin-top: 2rem;
+}
+
+.venue-name {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.event-time {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+/* Secciones generales */
+.artists-section,
+.description-section,
+.zones-section,
+.location-section,
+.faq-section {
+  padding: 3rem 0;
+  background: transparent;
+  position: relative;
+  z-index: 10;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-family: "Squada One", cursive;
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.section-divider {
+  width: 6rem;
+  height: 4px;
+  background: linear-gradient(to right, #ff0000, #ff00ff);
+  margin: 0 auto 2rem;
+}
+
+/* Artists Section */
+.artist-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.artist-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.artist-image-container {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 2px solid #8a2be2;
+}
+
+.artist-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.artist-image:hover {
+  transform: scale(1.05);
+}
+
+.artist-info {
+  color: white;
+}
+
+.artist-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.artist-category {
+  font-size: 1.125rem;
+  color: #8a2be2;
+  margin-bottom: 1.5rem;
+}
+
+.artist-description {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Description Section */
+.description-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.description-card {
+  background: rgba(74, 0, 128, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid #8a2be2;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  color: white;
+}
+
+.description-text {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.feature-item {
+  background: rgba(42, 0, 74, 0.7);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.feature-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ff0000;
+}
+
+.feature-text {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Zones Section */
+.zones-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.zones-map-container {
+  position: relative;
+  height: 500px;
+  margin-bottom: 3rem;
+  border: 2px solid #8a2be2;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.zones-map {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.zones-cta {
+  text-align: center;
+}
+
+.zones-text {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+
+.zones-button {
+  background: #22c55e;
+  border: 2px solid #22c55e;
+  color: white;
+  padding: 1rem 3rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.zones-button:hover {
+  background: #16a34a;
+  border-color: #16a34a;
+}
+
+/* Location Section */
+.location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.location-card {
+  background: rgba(42, 0, 74, 0.7);
+  border: 1px solid #8a2be2;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+.location-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.location-info {
+  margin-bottom: 1.5rem;
+}
+
+.venue-title {
+  font-size: 1.125rem;
+  color: #8a2be2;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.venue-address {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.venue-image-container {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 2px solid #8a2be2;
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+.venue-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.maps-button {
+  width: 100%;
+  background: transparent;
+  border: 2px solid #ff0000;
+  color: #ff0000;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.maps-button:hover {
+  background: #ff0000;
+  color: white;
+}
+
+.maps-container {
+  height: 400px;
+}
+
+.google-maps {
+  width: 100%;
+  height: 400px;
+  border: 0;
+  border-radius: 0.5rem;
+  border: 2px solid #8a2be2;
+}
+
+/* FAQ Section */
+.faq-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border: 1px solid #8a2be2;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-question {
+  width: 100%;
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 1rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #ff0000;
+}
+
+.faq-icon {
+  font-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.faq-answer.active {
+  max-height: 200px;
+}
+
+.faq-answer p {
+  padding: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background: transparent;
+  border-top: 1px solid #8a2be2;
+  padding: 3rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.brand-logo {
+  height: 2.5rem;
+  width: auto;
+}
+
+.brand-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 0.05em;
+}
+
+.brand-description {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+  letter-spacing: 0.05em;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-icon {
+  color: #ff0000;
+}
+
+.social-description {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 1rem;
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.social-button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.facebook {
+  background: #1877f2;
+}
+
+.facebook:hover {
+  background: #166fe5;
+}
+
+.instagram {
+  background: #e4405f;
+}
+
+.instagram:hover {
+  background: #d73559;
+}
+
+.tiktok {
+  background: #000000;
+}
+
+.tiktok:hover {
+  background: #333333;
+}
+
+.footer-bottom {
+  border-top: 1px solid #8a2be2;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-grid,
+  .artist-grid,
+  .location-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .event-info-column {
+    text-align: center;
+  }
+
+  .poster-container {
+    height: 500px;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+  }
+
+  .event-title {
+    font-size: 3rem;
+  }
+
+  .event-location {
+    font-size: 1.5rem;
+  }
+
+  .countdown {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .countdown-number {
+    font-size: 2rem;
+  }
+
+  .poster-container {
+    height: 400px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .artist-name {
+    font-size: 1.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .zones-map-container {
+    height: 300px;
+  }
+
+  .location-card {
+    padding: 1.5rem;
+  }
+
+  .venue-image-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+
+  .event-title {
+    font-size: 2.5rem;
+  }
+
+  .event-location {
+    font-size: 1.25rem;
+  }
+
+  .countdown-box {
+    min-width: 60px;
+    padding: 0.75rem;
+  }
+
+  .countdown-number {
+    font-size: 1.5rem;
+  }
+
+  .vip-button,
+  .zones-button {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-buttons {
+    justify-content: center;
+  }
+}

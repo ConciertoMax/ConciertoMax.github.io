@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concierto Max Castro - Esperanza Perú Huánuco</title>
+    <meta name="description" content="Concierto masivo en Huánuco con Max Castro - 22 de Agosto 2025">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Global Background -->
+    <div class="global-background">
+        <img src="imagenes/fondo.jpeg" alt="Fondo del concierto" class="background-image">
+        <div class="background-overlay"></div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <button onclick="scrollToSection('inicio')" class="nav-link">Inicio</button>
+                <button onclick="scrollToSection('artistas')" class="nav-link">Artistas</button>
+                <button onclick="scrollToSection('descripcion')" class="nav-link">Descripción</button>
+                <button onclick="scrollToSection('zonas')" class="nav-link">Zonas</button>
+                <button onclick="scrollToSection('ubicacion')" class="nav-link">Ubicación</button>
+                <button onclick="scrollToSection('faq')" class="nav-link">FAQ</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Poster Column -->
+                    <div class="poster-column">
+                        <div class="poster-container">
+                            <img src="imagenes/max-castro-poster.jpeg" alt="Poster del Concierto Max Castro en Huánuco" class="poster-image">
+                        </div>
+                    </div>
+
+                    <!-- Event Info Column -->
+                    <div class="event-info-column">
+                        <div class="event-info">
+                            <h1 class="event-title">
+                                22 DE AGOSTO<br>
+                                <span class="year-text">2025</span>
+                            </h1>
+                            <p class="event-location">HUÁNUCO, PERÚ</p>
+                        </div>
+
+                        <!-- Countdown -->
+                        <div class="countdown-container">
+                            <div id="countdown" class="countdown"></div>
+                        </div>
+
+                        <!-- VIP Button -->
+                        <div class="vip-section">
+                            <p class="vip-text">ENTÉRATE CÓMO ESTAR EN LA ZONA VIP</p>
+                            <button onclick="openWhatsApp()" class="vip-button">
+                                Zona VIP
+                            </button>
+                        </div>
+
+                        <!-- Additional Info -->
+                        <div class="additional-info">
+                            <p class="venue-name">COMPLEJO DEPORTIVO DE PAUCARBAMBA</p>
+                            <p class="event-time">18:00 HRS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Artists Section -->
+        <section id="artistas" class="artists-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">ARTISTAS</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="artist-content">
+                    <div class="artist-grid">
+                        <div class="artist-image-container">
+                            <img src="imagenes/mito-ramos-fondo.png" alt="Mito Ramos" class="artist-image">
+                        </div>
+                        <div class="artist-info">
+                            <h3 class="artist-name">MITO RAMOS</h3>
+                            <p class="artist-category">ARTISTA LOCAL</p>
+                            <p class="artist-description">
+                                Mito Ramos es un destacado exponente de la música andina contemporánea, conocido por su voz potente
+                                y su habilidad para fusionar ritmos tradicionales con sonidos modernos. Su música transmite mensajes
+                                de esperanza y resiliencia, conectando profundamente con el público.
+                            </p>
+                            <p class="artist-description">
+                                Con una trayectoria en ascenso, Mito Ramos ha cautivado escenarios nacionales e internacionales,
+                                consolidándose como una de las voces más prometedoras de su género. Sus presentaciones en vivo son
+                                una experiencia vibrante, llena de energía y emotividad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Description Section -->
+        <section id="descripcion" class="description-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">DESCRIPCIÓN DEL EVENTO</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="description-content">
+                    <div class="description-card">
+                        <p class="description-text">
+                            <span class="highlight">Esperanza Perú Huánuco</span> presenta el concierto más
+                            esperado del año 2025, protagonizado por el reconocido artista nacional
+                            <span class="highlight">Max Castro</span>.
+                        </p>
+
+                        <p class="description-text">
+                            Este evento único reunirá a miles de personas en el Complejo Deportivo de Paucarbamba para disfrutar de
+                            una noche llena de música, emoción y esperanza. El concierto forma parte de la gira nacional "Esperanza"
+                            que busca llevar mensajes positivos a través de la música.
+                        </p>
+
+                        <p class="description-text">
+                            Además del show principal, contaremos con la participación de talentosos artistas locales que mostrarán
+                            lo mejor de la escena musical huanuqueña. El evento también incluirá charlas inspiradoras de reconocidos
+                            ponentes que compartirán mensajes de fe y esperanza.
+                        </p>
+
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <div class="feature-icon">⏰</div>
+                                <p class="feature-text">5 horas de música</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">👥</div>
+                                <p class="feature-text">Capacidad para 5,000 personas</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🎵</div>
+                                <p class="feature-text">Artistas nacionales y locales</p>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🎤</div>
+                                <p class="feature-text">Ponentes inspiradores</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Zones Section -->
+        <section id="zonas" class="zones-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">ZONAS</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="zones-content">
+                    <div class="zones-map-container">
+                        <img src="imagenes/mapa-zonas.png" alt="Mapa de zonas del concierto" class="zones-map">
+                    </div>
+
+                    <div class="zones-cta">
+                        <p class="zones-text">
+                            Para solicitar invitaciones especiales para zonas VIP y Super VIP, contacta con los organizadores:
+                        </p>
+                        <button onclick="openWhatsAppVIP()" class="zones-button">
+                            🎫 Solicitar Invitación Especial
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="ubicacion" class="location-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">UBICACIÓN</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="location-grid">
+                    <!-- Location Card -->
+                    <div class="location-card">
+                        <h3 class="location-title">
+                            📍 COMPLEJO DEPORTIVO DE PAUCARBAMBA
+                        </h3>
+                        <div class="location-details">
+                            <div class="location-info">
+                                <p class="venue-title">Complejo Deportivo de Paucarbamba</p>
+                                <p class="venue-address">Paucarbamba, Huánuco, Perú</p>
+                            </div>
+                            <div class="venue-image-container">
+                                <img src="imagenes/complejo-deportivo-v2.jpeg" alt="Complejo Deportivo de Paucarbamba" class="venue-image">
+                            </div>
+                            <button onclick="openGoogleMaps()" class="maps-button">
+                                📍 Ver en Google Maps
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps -->
+                    <div class="maps-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.2889192053035!2d-76.24526232394823!3d-9.941323591937744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91a7c3002e3aa0bd%3A0x4164d14661b12a1d!2sComplejo%20Deportivo%20de%20Paucarbamba!5e0!3m2!1ses-419!2spe!4v1721687519182!5m2!1ses-419!2spe"
+                            class="google-maps"
+                            allowfullscreen
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa del Complejo Deportivo de Paucarbamba">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">PREGUNTAS FRECUENTES</h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="faq-content">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿El evento es gratuito?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, el evento es completamente gratuito. La entrada general es por orden de llegada hasta completar
+                            el aforo. Para zonas VIP y Super VIP se requiere pase especial.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿A qué hora debo llegar?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Recomendamos llegar al menos 1 hora antes del inicio del evento (17:00) para asegurar un buen lugar.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Puedo llevar niños al evento?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, es un evento familiar apto para todas las edades. Los niños menores de 12 años deben estar
+                            acompañados por un adulto responsable en todo momento.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Cómo puedo obtener invitaciones para zonas VIP?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Las invitaciones para zonas VIP y Super VIP son distribuidas por los organizadores del evento.
+                            Puedes contactar directamente a través del botón de WhatsApp para consultar disponibilidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Qué pasa si llueve?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>El evento se realizará con normalidad incluso en caso de lluvia ligera. En caso de condiciones
+                            climáticas severas, se comunicará cualquier cambio a través de las redes sociales oficiales.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Puedo tomar fotos y videos?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, está permitido tomar fotos y videos para uso personal. No se permite el uso de cámaras
+                            profesionales o equipos de grabación sin autorización previa.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            ¿Habrá objetos prohibidos?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No se permite el ingreso de bebidas alcohólicas, objetos punzocortantes, armas de cualquier tipo,
+                            drones, selfie sticks, o cualquier objeto que pueda representar un riesgo para los asistentes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <div class="brand-container">
+                            <img src="imagenes/slogan-4.png" alt="Esperanza Perú" class="brand-logo">
+                            <span class="brand-name">ESPERANZA PERÚ</span>
+                        </div>
+                        <p class="brand-description">Organizando los mejores eventos musicales en Huánuco.</p>
+                    </div>
+
+                    <div class="footer-contact">
+                        <h3 class="footer-title">CONTACTO</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span>+51 962 XXX XXX</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span>info@esperanzaperu.pe</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>Huánuco, Perú</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-social">
+                        <h3 class="footer-title">SÍGUENOS</h3>
+                        <p class="social-description">No te pierdas las últimas noticias del concierto</p>
+                        <div class="social-buttons">
+                            <button onclick="openFacebook()" class="social-button facebook">Facebook</button>
+                            <button onclick="openInstagram()" class="social-button instagram">Instagram</button>
+                            <button onclick="openTikTok()" class="social-button tiktok">TikTok</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Concierto Max Castro - Esperanza Perú Huánuco. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
