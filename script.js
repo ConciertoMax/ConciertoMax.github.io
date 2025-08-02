@@ -125,16 +125,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // Actualizar el countdown cada segundo
   setInterval(updateCountdown, 1000)
 
-  // Agregar efecto de parallax suave al scroll
-  window.addEventListener("scroll", () => {
-    const scrolled = window.pageYOffset
-    const background = document.querySelector(".background-image")
-
-    if (background) {
-      background.style.transform = `translateY(${scrolled * 0.5}px)`
-    }
-  })
-
   // Agregar animaciones de entrada cuando los elementos son visibles
   const observerOptions = {
     threshold: 0.1,
@@ -157,30 +147,4 @@ document.addEventListener("DOMContentLoaded", () => {
     section.style.transition = "opacity 0.6s ease, transform 0.6s ease"
     observer.observe(section)
   })
-})
-
-// Función para optimizar el rendimiento en dispositivos móviles
-function isMobile() {
-  return window.innerWidth <= 768
-}
-
-// Reducir la frecuencia de actualización del parallax en móviles
-let ticking = false
-
-function updateParallax() {
-  const scrolled = window.pageYOffset
-  const background = document.querySelector(".background-image")
-
-  if (background && !isMobile()) {
-    background.style.transform = `translateY(${scrolled * 0.3}px)`
-  }
-
-  ticking = false
-}
-
-window.addEventListener("scroll", () => {
-  if (!ticking) {
-    requestAnimationFrame(updateParallax)
-    ticking = true
-  }
 })
