@@ -7,11 +7,26 @@
     <meta name="description" content="Concierto masivo en Huánuco con Max Castro - 22 de Agosto 2025">
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Squada+One&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+html, body {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+* {
+    background-color: transparent;
+}
+.main-content, .main-content * {
+    background-color: transparent;
+}
+.description-card, .location-card, .faq-item {
+    background: rgba(74, 0, 128, 0.5) !important;
+}
+</style>
 </head>
 <body>
     <!-- Global Background -->
     <div class="global-background">
-        <img src="images/fondo.jpeg" alt="Fondo del concierto" class="background-image">
+        <img src="imagenes/fondo.jpeg" alt="Fondo del concierto" class="background-image">
         <div class="background-overlay"></div>
     </div>
 
@@ -38,7 +53,7 @@
                     <!-- Poster Column -->
                     <div class="poster-column">
                         <div class="poster-container">
-                            <img src="images/max-castro-poster.jpeg" alt="Poster del Concierto Max Castro en Huánuco" class="poster-image">
+                            <img src="imagenes/max-castro-poster.jpeg" alt="Poster del Concierto Max Castro en Huánuco" class="poster-image">
                         </div>
                     </div>
 
@@ -86,7 +101,7 @@
                 <div class="artist-content">
                     <div class="artist-grid">
                         <div class="artist-image-container">
-                            <img src="images/mito-ramos-fondo.png" alt="Mito Ramos" class="artist-image">
+                            <img src="imagenes/mito-ramos-fondo.png" alt="Mito Ramos" class="artist-image">
                         </div>
                         <div class="artist-info">
                             <h3 class="artist-name">MITO RAMOS</h3>
@@ -168,7 +183,7 @@
 
                 <div class="zones-content">
                     <div class="zones-map-container">
-                        <img src="images/mapa-zonas.png" alt="Mapa de zonas del concierto" class="zones-map">
+                        <img src="imagenes/mapa-zonas.png" alt="Mapa de zonas del concierto" class="zones-map">
                     </div>
 
                     <div class="zones-cta">
@@ -203,7 +218,7 @@
                                 <p class="venue-address">Paucarbamba, Huánuco, Perú</p>
                             </div>
                             <div class="venue-image-container">
-                                <img src="images/complejo-deportivo-v2.jpeg" alt="Complejo Deportivo de Paucarbamba" class="venue-image">
+                                <img src="imagenes/complejo-deportivo-v2.jpeg" alt="Complejo Deportivo de Paucarbamba" class="venue-image">
                             </div>
                             <button onclick="openGoogleMaps()" class="maps-button">
                                 📍 Ver en Google Maps
@@ -320,7 +335,7 @@
                 <div class="footer-grid">
                     <div class="footer-brand">
                         <div class="brand-container">
-                            <img src="images/slogan-4.png" alt="Esperanza Perú" class="brand-logo">
+                            <img src="imagenes/slogan-4.png" alt="Esperanza Perú" class="brand-logo">
                             <span class="brand-name">ESPERANZA PERÚ</span>
                         </div>
                         <p class="brand-description">Organizando los mejores eventos musicales en Huánuco.</p>
