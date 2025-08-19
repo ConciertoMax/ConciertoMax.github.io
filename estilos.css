@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
   height: 100%;
   background: url("images/fondo.jpeg") center center / cover no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
 }
 
 /* Overlay fijo sobre el fondo */
@@ -785,32 +785,6 @@ body::before {
   color: rgba(255, 255, 255, 0.4);
 }
 
-/* Optimización para móviles - fondo */
-@media (max-width: 768px) {
-  body {
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-
-  body::before {
-    background: rgba(42, 0, 74, 0.6);
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center top;
-  }
-
-  body::before {
-    background: rgba(42, 0, 74, 0.5);
-  }
-}
-
 /* Responsive Design */
 @media (max-width: 1024px) {
   .hero-grid,
@@ -897,7 +871,7 @@ body::before {
 
   .artist-image-container,
   .show-infantil-image-container {
-    height: 450px;
+    height: 400px;
   }
 }
 
