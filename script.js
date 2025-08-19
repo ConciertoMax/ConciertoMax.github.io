@@ -86,14 +86,14 @@ function toggleFAQ(button) {
 // Funciones para abrir enlaces externos
 function openWhatsApp() {
   window.open(
-    "https://wa.me/51962000000?text=Hola,%20quiero%20información%20sobre%20el%20concierto%20de%20Max%20Castro",
+    "https://wa.me/51907862505?text=Hola,%20quiero%20información%20sobre%20el%20concierto%20de%20Max%20Castro",
     "_blank",
   )
 }
 
 function openWhatsAppVIP() {
   window.open(
-    "https://wa.me/51962000000?text=Hola,%20quiero%20solicitar%20invitaciones%20VIP%20para%20el%20concierto",
+    "https://wa.me/51907862505?text=Hola,%20quiero%20solicitar%20invitaciones%20VIP%20para%20el%20concierto",
     "_blank",
   )
 }
